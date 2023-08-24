@@ -1,0 +1,53 @@
+/* change cursor color */
+.monaco-editor .cursor {
+	box-shadow: 0 0 42px 5px #ee0979, #ff6a00 0px 0px 34px 1px;
+	background: linear-gradient(to bottom, #ee0979, #ff6a00) !important;
+	color: #161616 !important;
+}
+
+/* remove overview ruler completely */
+.editor .decorationsOverviewRuler {
+	display: none !important;
+}
+
+/* make sticky widget fill the space left by the overview ruler */
+.editor .sticky-widget {
+	padding-right: 14px !important;
+}
+
+/* make sidebar titles and statusbar lowercase */
+.statusbar * {
+	text-transform: lowercase !important;
+}
+
+/* hide scrollbar shadow */
+.editor .scroll-decoration {
+	visibility: hidden;
+}
+
+/* remove tabs-actions border right */
+.tabs-and-actions-container {
+	border-width: 0 0 1px 0;
+}
+
+/* remove all editor actions */
+.tabs-and-actions-container .editor-actions {
+	display: none !important;
+}
+
+/* remove tab border right and change their size to be flexiable */
+[role="tab"] {
+	border: 0 none !important;
+	flex: 1 1 auto;
+}
+
+/* remove vscode logo, vscode actionbar */
+.titlebar-left, .monaco-toolbar .monaco-action-bar, .global-activity-actionbar {
+	display: none !important;
+}
+
+/* move window title to the left */
+.window-title {
+	font-size: 10px !important;
+	text-align: left;
+}
