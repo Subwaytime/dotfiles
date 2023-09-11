@@ -55,9 +55,9 @@
         "graphql",
         "javascript",
         "typescript"
-    ],
-    "breadcrumbs.enabled": false,
-    "color-highlight.markerType": "underline",
+	],
+	"breadcrumbs.enabled": false,
+	"color-highlight.markerType": "underline",
     "css.validate": false,
     "debug.toolBarLocation": "hidden",
     "diffEditor.renderIndicators": false,
@@ -221,7 +221,10 @@
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.inheritEnv": false,
-    "terminal.integrated.lineHeight": 1.5,
+	"terminal.integrated.lineHeight": 1.5,
+	"terminal-in-status-bar.statusBarAlignment": "right",
+	"terminal-in-status-bar.statusBarLabel": true,
+	"terminal-in-status-bar.statusBarPriority": 1000,
     "todo-tree.general.tags": [
         "FUTURE",
         "BUG",
@@ -260,5 +263,6 @@
     "workbench.startupEditor": "none",
     "workbench.statusBar.feedback.visible": false,
     "workbench.statusBar.remoteHost.visible": false,
-    "workbench.tree.indent": 24
+    "workbench.tree.indent": 24,
+	"workbench.tips.enabled": false,
 }
