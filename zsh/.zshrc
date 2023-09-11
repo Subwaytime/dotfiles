@@ -24,20 +24,22 @@ plugins=(
 # -------------------------------- #
 alias lar="php artisan"
 alias larnew="composer create-project laravel/laravel"
-alias vapor="php vendor/bin/vapor"
+alias new="cd ~/work/dotfiles/bun && bun run dev"
 alias com="composer"
-alias npmup="pnpm add -g pnpm"
-alias comup="sudo /usr/local/bin/composer self-update"
 alias ls="nnn -de"
 
 # Replace npm command with pnpm for convience
 alias npx=pnpm exec
 alias npm=pnpm
 
+# Quick updates
+alias npmup="pnpm add -g pnpm"
+alias comup="sudo /usr/local/bin/composer self-update"
+
 # -------------------------------- #
 # System Aliases
 # -------------------------------- #
-alias up="sudo nala update && sudo nala upgrade && flatpak update && npmup && comup"
+alias up="sudo nala update && sudo nala upgrade && flatpak update && npmup && comup && bun upgrade"
 alias cclear="sudo apt autoclean && sudo apt autoremove && sudo apt clean && sudo flatpak uninstall --unused"
 alias add="sudo nala install"
 alias del="sudo nala remove --purge"
@@ -52,6 +54,13 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # https://ohmyz.sh/
 source $ZSH/oh-my-zsh.sh
+
+# bun completions
+# [ -s "/home/subway/.bun/_bun" ] && source "/home/subway/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
 
 # NPM/NVM
 export NVM_DIR="$HOME/.nvm"
