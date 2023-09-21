@@ -23,8 +23,8 @@ plugins=(
 # Work Aliases
 # -------------------------------- #
 alias lar="php artisan"
-alias larnew="composer create-project laravel/laravel"
-alias new="cd ~/work/dotfiles/bun && bun run dev"
+alias new="bun ~/work/bun-tools/creator"
+alias buni="bun ~/work/bun-tools/latest"
 alias com="composer"
 alias ls="nnn -de"
 
@@ -35,11 +35,12 @@ alias npm=pnpm
 # Quick updates
 alias npmup="pnpm add -g pnpm"
 alias comup="sudo /usr/local/bin/composer self-update"
+alias fixvs="sudo chown -R $(whoami) /usr/share/code"
 
 # -------------------------------- #
 # System Aliases
 # -------------------------------- #
-alias up="sudo nala update && sudo nala upgrade && flatpak update && npmup && comup && bun upgrade"
+alias up="sudo nala update && sudo nala upgrade && flatpak update && npmup && comup && bun upgrade && fixvs"
 alias cclear="sudo apt autoclean && sudo apt autoremove && sudo apt clean && sudo flatpak uninstall --unused"
 alias add="sudo nala install"
 alias del="sudo nala remove --purge"
