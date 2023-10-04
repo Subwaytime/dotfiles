@@ -42,12 +42,16 @@
 }
 
 /* remove vscode logo, vscode actionbar */
-.titlebar-left, .monaco-toolbar .monaco-action-bar, .global-activity-actionbar {
+.titlebar-left, .monaco-toolbar .menu-entry, .command-center .codicon-search {
 	display: none !important;
 }
 
 /* move window title to the left */
-.window-title {
+.command-center {
+	background: transparent !important;
+	border: 0 none !important;
 	font-size: 10px !important;
+	justify-content: flex-start !important;
+	margin: 0 !important;
 	text-align: left;
 }
