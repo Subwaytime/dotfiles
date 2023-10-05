@@ -47,7 +47,7 @@
 }
 
 /* move window title to the left */
-.command-center {
+.actions-container > li:nth-child(3) {
 	background: transparent !important;
 	border: 0 none !important;
 	font-size: 10px !important;
