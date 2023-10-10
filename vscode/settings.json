@@ -20,6 +20,12 @@
     "[vue]": {
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
+	"[css]": {
+		"editor.defaultFormatter": "stylelint.vscode-stylelint"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "stylelint.vscode-stylelint"
+	},
     "apc.activityBar": {
         "hideSettings": true,
         "size": 46
@@ -76,10 +82,11 @@
     "disableLigatures.mode": "Cursor",
     "editor.acceptSuggestionOnEnter": "on",
     "editor.bracketPairColorization.enabled": true,
-    "editor.codeActionsOnSave": [
-        "source.fixAll.eslint",
-        "source.addMissingImports"
-    ],
+    "editor.codeActionsOnSave": {
+        "source.addMissingImports": true,
+        "source.fixAll.eslint": true,
+		"source.fixAll.stylelint": true
+    },
     "editor.codeLens": false,
     "editor.colorDecorators": false,
     "editor.cursorBlinking": "solid",
@@ -225,6 +232,11 @@
         "**/venv": true,
         "**/yarn.lock": true
     },
+    "stylelint.validate": [
+        "css",
+        "scss",
+        "vue"
+    ],
     "symbols.hidesExplorerArrows": false,
     "telemetry.telemetryLevel": "off",
     "terminal.integrated.cursorBlinking": false,
@@ -265,6 +277,7 @@
     "window.zoomLevel": 1,
     "workbench.colorTheme": "Moegi Dark Vitesse",
     "workbench.editor.decorations.badges": false,
+    "workbench.editor.empty.hint": "hidden",
     "workbench.editor.enablePreviewFromQuickOpen": true,
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.editor.splitInGroupLayout": "vertical",
