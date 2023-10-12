@@ -73,3 +73,19 @@ export NVM_DIR="$HOME/.nvm"
 export PNPM_HOME="$HOME/.local/share/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# Updating mysql leads to an annoying Bug where the error.log file is deleted
+# This should fix it
+function fixsql() {
+	LOG_FOLDER="/var/log/mysql"
+
+	if [ ! -d "$LOG_FOLDER" ]; then
+		sudo mkdir $LOG_FOLDER;
+	fi
+
+	if [ ! -f "$LOG_FOLDER/error.log" ]; then
+		cd $LOG_FOLDER && sudo touch "error.log";
+	fi
+
+	sudo chown -R mysql:mysql $LOG_FOLDER && sudo service mysql restart;
+}
