@@ -55,3 +55,8 @@
 	margin: 0 !important;
 	text-align: left;
 }
+
+/* fix icon positioning for most instances */
+.monaco-icon-label {
+	align-items: center;
+}
