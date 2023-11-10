@@ -60,3 +60,23 @@
 .monaco-icon-label {
 	align-items: center;
 }
+
+/* fix tabs full width background color when there are no open tabs */
+.tabs:has(.empty) {
+	background-color: transparent !important;
+}
+
+/* Hide option for open projects */
+/* span.search-label, .statusbar-item.first-visible-item, .rootfolder-icon .monaco-icon-name-container .monaco-highlighted-label {
+	display: none !important;
+}
+
+.work-name-dir-icon.{PROJECT_NAME}-name-file-icon .label-name:before {
+	display: block!important;
+	content: "frontend"!important;
+}
+
+.work-name-dir-icon.{PROJECT_NAME}-name-file-icon .label-name:before {
+	display: block!important;
+	content: "backend"!important;
+} */
