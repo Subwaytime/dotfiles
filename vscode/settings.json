@@ -7,7 +7,6 @@
     "window.title": "${activeEditorLong}",
     "window.titleBarStyle": "custom",
     "window.zoomLevel": 0,
-    "workbench.activityBar.visible": true,
     "workbench.colorTheme": "Moegi Dark Vitesse",
     "workbench.editor.decorations.badges": false,
     "workbench.editor.empty.hint": "hidden",
@@ -17,7 +16,6 @@
     "workbench.editor.limit.perEditorGroup": true,
     "workbench.editor.limit.value": 5,
     "workbench.editor.splitInGroupLayout": "vertical",
-    "workbench.editor.untitled.hint": "hidden",
     "workbench.iconTheme": "symbols",
     "workbench.list.smoothScrolling": true,
     "workbench.productIconTheme": "icons-carbon",
@@ -111,7 +109,8 @@
     "terminal.integrated.tabs.location": "left",
     "terminal.integrated.enablePersistentSessions": false,
     "terminal.integrated.inheritEnv": false,
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.125,
+    "terminal.integrated.fontSize": 16,
 
     // GIT
     "git.autofetch": true,
@@ -121,12 +120,16 @@
     "gitHistory.sideBySide": true,
 
     // VUE
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.preferences.includePackageJsonAutoImports": "off",
     "volar.codeLens.scriptSetupTools": true,
     "volar.experimentalDisableTemplateSupport": true,
     "volar.inlayHints.eventArgumentInInlineHandlers": false,
     "volar.inlayHints.missingRequiredProps": false,
     "volar.takeOverMode.enabled": true,
+    "vue.autoInsert.dotValue": false,
     "vue.codeActions.enabled": false,
+    "vue.complete.normalizeComponentImportName": false,
     "vue.inlayHints.optionsWrapper": false,
     "vue.server.runtime": "bun",
 
