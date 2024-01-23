@@ -98,6 +98,7 @@
     "editor.renderWhitespace": "none",
     "editor.snippetSuggestions": "top",
     "explorer.autoReveal": false,
+    "explorer.compactFolders": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.sortOrder": "type",
@@ -132,6 +133,9 @@
     "vue.complete.normalizeComponentImportName": false,
     "vue.inlayHints.optionsWrapper": false,
     "vue.server.runtime": "bun",
+    "[vue]": {
+        "editor.defaultFormatter": "Vue.volar"
+    },
 
     // PHP
     "php.suggest.basic": false,
@@ -194,6 +198,7 @@
         "BUG",
         "HACK",
         "FIXME",
+        "FIX",
         "TODO",
         "XXX",
         "[ ]",
