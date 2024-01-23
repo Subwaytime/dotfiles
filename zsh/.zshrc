@@ -24,7 +24,7 @@ plugins=(
 # -------------------------------- #
 alias lar="php artisan"
 alias new="bun ~/work/bun-tools/creator"
-alias buni="bun ~/work/bun-tools/latest"
+alias buni="bun ~/work/bun-tools/updater"
 alias com="composer"
 alias ls="nnn -de"
 
@@ -41,10 +41,11 @@ alias fixvs="sudo chown -R $(whoami) /usr/share/code"
 # System Aliases
 # -------------------------------- #
 alias up="sudo nala update && sudo nala upgrade && flatpak update && npmup && comup && bun upgrade && fixvs"
-alias cclear="sudo apt autoclean && sudo apt autoremove && sudo apt clean && sudo flatpak uninstall --unused"
+alias cclear="sudo apt autoclean && sudo apt autoremove && sudo apt clean && sudo flatpak uninstall --unused && history -c"
 alias add="sudo nala install"
 alias del="sudo nala remove --purge"
 alias pkg="dpkg -l | grep"
+alias vpn="nordvpn"
 
 # -------------------------------- #
 # PATH
