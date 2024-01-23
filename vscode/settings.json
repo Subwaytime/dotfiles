@@ -58,6 +58,22 @@
         "height": 32,
         "position": "editor-bottom"
     },
+    "editor.tokenColorCustomizations": {
+        "[Moegi Dark Vitesse]": {
+            "textMateRules": [
+                {
+                    "name": "Comment Italics",
+                    "scope": [
+                        "comment",
+                        "punctuation.definition.comment"
+                    ],
+                    "settings": {
+                        "fontStyle": "bold italic"
+                    }
+                },
+            ]
+        }
+    },
 
     // EDITOR
     "diffEditor.renderIndicators": false,
